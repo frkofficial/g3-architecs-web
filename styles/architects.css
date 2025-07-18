@@ -136,21 +136,7 @@ main > section{
        max-width: 530;
 }
 
-/* responsive media query */
-@media screen and (max-width: 576px) {
-    .navbar , .nav-links , .teams{
-        flex-direction: column;
-    }
-    .banner-img{
-        width: 100%;
-    }
-    .team-img-container{
-        grid-template-columns:repeat(1, 1fr) ;
-    }
-    .our-features{
-          margin-left: 20px;
-    }
-}
+
 
 /* some facts */
 .facts-container{
@@ -183,6 +169,47 @@ main > section{
     max-width: 540px;
 }
 
+/* sponceers related styles */
+.sponsor-info{
+    max-width: 540px;
+    /* majha majhi anar jonno */
+    margin: 50px auto;
+    text-align: center;
+}
+.sponcors-company{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+.sponcors-company img{
+    filter: grayscale(100%);
+}
+
+/* responsive media query */
+@media screen and (max-width: 576px) {
+    .navbar , .nav-links , .teams{
+        flex-direction: column;
+    }
+    .banner-img{
+        width: 100%;
+    }
+    .team-img-container , 
+    .facts-container,
+    .sponcors-company{
+        grid-template-columns:repeat(1, 1fr) ;
+    }
+    .sponcors-company{
+        justify-items: center;
+        gap: 50px;
+    }
+    .facts-container{
+        justify-items: center;
+        gap: 24px;
+    }
+    .our-features{
+          margin-left: 20px;
+    }
+}
+
 /* medium size device */
 @media screen and (min-width:567px) and (max-width: 992px) {
     teams{
@@ -190,6 +217,10 @@ main > section{
     }
     .our-features{
         margin-left: 50px
+    }
+    .sponcors-company , .facts-container{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 50px
     }
 }
 
