@@ -8,3 +8,164 @@
   font-weight: 400;
   font-style: normal;
 }
+/* shared styles */
+.display-flex{
+    display: flex;
+}
+/* dark-2 */
+.text-grey{
+    color:#424242
+}
+/* dark-3 */
+.text-light-grey{
+   color:#727272
+}
+.bg-light{
+    background-color: rgba(255, 144, 14, 0.1);
+}
+.btn-primary{
+    background-color: #FF900E;
+    color: white;
+    padding: 20px 25px;
+    font-size: 1.25rem;
+    font-weight: 600;
+    border-radius: 8px;
+    border: none;
+}
+/* main style */
+main{
+    max-width: 1440px;
+    /* max-width dile align center o dite hobe, margin 0 diyeo kora jay */
+    margin: 0 auto; 
+}
+
+/* main er bhitor joto gula section ase shob gular margin set kora */
+main > section{
+    margin-top: 120px;
+}
+
+/* header styles */
+
+/* navbar related styles */
+ .navbar{
+    /* x-axis borabor center ae thakar jonno */
+    justify-content:space-between;
+    /* y-axis borabor center ae thakar jonno */
+    align-items: center;
+    margin-left: 300px;
+ }
+ .brand{
+    font-weight: 700;
+    font-size: 2.5rem;
+ }
+.nav-links{
+    /* text-decoration: none; */
+    font-weight: 500;
+    
+
+}
+.nav-item{
+    
+    list-style: none;
+    margin: 30px;
+
+}
+
+.navbar , .banner {
+    max-width : 1440px;
+   
+    justify-content: space-between;
+    
+    gap: 100px;
+    padding: 20px;
+}
+.navbar a{
+    /* nav er bhitor je anchor a gula ache shegular underline thakbe na */
+    text-decoration: none;
+}
+/* banner related styles */
+.banner-content{
+    max-width: 870px;
+    /* margin: 0 auto; */
+    margin-left:529px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.banner-title{
+    font-weight: 700px;
+    font-size: 4rem;
+    margin-top: 0px;
+    
+}
+.banner-img {
+
+    
+    /* width: 100%;
+    height: auto; */
+    margin-left: 200px;
+}
+
+/* teams and featrure section */
+.teams{
+    align-items: center;
+    /* gap: 15px; */
+    
+}
+
+.team-img-container{
+    display: grid;
+    /* sudhu grid dile kichu hoina tai grd colmn dite hoi */
+    grid-template-columns: repeat(2, 1fr);
+
+    /* chobi gular majhe gap koto mepe shetao diwar jonno gap ta */
+    gap: 24px;
+}
+/* eta shob jaygay use hobe , eta shared style*/
+.section-title{
+    font-size: 2.8rem;
+    font-weight: 700;
+}
+#quick-list{
+    font-weight: 500;
+}
+#feature{
+    color: #FF900E;
+}
+.our-features{
+       margin-left: 130px;
+       max-width: 530;
+}
+
+/* responsive media query */
+@media screen and (max-width: 576px) {
+    .navbar , .nav-links , .teams{
+        flex-direction: column;
+    }
+    .banner-img{
+        width: 100%;
+    }
+    .team-img-container{
+        grid-template-columns:repeat(1, 1fr) ;
+    }
+    .our-features{
+          margin-left: 20px;
+    }
+}
+
+/* some facts */
+.facts-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/* medium size device */
+@media screen and (min-width:567px) and (max-width: 992px) {
+    teams{
+        flex-direction: column;
+    }
+    .our-features{
+        margin-left: 50px
+    }
+}
+
