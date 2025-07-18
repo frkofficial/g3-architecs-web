@@ -151,6 +151,22 @@ main > section{
     margin-bottom: 0px;
     
 }
+
+#experiece-badge{
+    padding: 45px 42px;
+    /* nicher choto likha tar jonno */
+    font-size: 1.5rem;
+    font-weight:500 ;
+    margin-left: -90px;
+    margin-top: -120px;
+}
+#experience-year{
+    font-size: 4rem;
+    font-weight: 700;
+}
+.featured-architect img{
+  width: 100%;
+}
 /* anoter feature */
 #feature{
     color: #FF900E;
@@ -217,7 +233,7 @@ main > section{
         width: 100%;
     }
     .team-img-container , 
-    .facts-container,
+    .facts-container, .features
     .sponcors-company{
         grid-template-columns:repeat(1, 1fr) ;
     }
@@ -231,6 +247,10 @@ main > section{
     }
     .our-features{
           margin-left: 20px;
+    }
+    #experiece-badge{
+        margin-top: 20px;
+        margin-left: 20px; 
     }
 }
 
